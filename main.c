@@ -6,10 +6,10 @@ int main() {
   char nama[20], NIM[15], kel[5];
 ulangi:
   system("cls");
-  printf("\nNilai UTS Mahasiswa");
-  printf("\nNama : ");
+  printf("Input Nilai Mahasiswa");
+  printf("Nama : ");
   gets(nama);
-  printf("\nNIM : ");
+  printf("NIM : ");
   gets(NIM);
   printf("Kelompok : ");
   gets(kel);
@@ -35,22 +35,22 @@ ulangi:
 
   switch (nilai_huruf) {
   case 'A':
-    printf("\nPertahankan");
+    printf("\nSelamat Anda Lulus");
     break;
   case 'B':
-    printf("\nHarus lebih baik lagi!");
+    printf("\nSelamat Anda Lulus");
     break;
   case 'C':
-    printf("\nHarus banyak belajar!");
+    printf("\nSelamat Anda Lulus");
     break;
   case 'D':
-    printf("\nJangan keseringan main!");
+    printf("\nAnda Tidak Lulus");
     break;
   default:
     printf("\nMaaf, Anda Tidak Punya Nilai!");
   }
 
-  printf("\nCoba lagi? (y/n) : ");
+  printf("\nInput ulang nilai? (y/n) : ");
   scanf("%s", &lagi);
   if (lagi == 'y') {
     goto ulangi;
